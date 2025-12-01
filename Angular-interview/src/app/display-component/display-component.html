@@ -1,0 +1,12 @@
+<div style="color: green; font-size:20px">Exercice 1: Voter</div>
+<!--Response voter-->
+<div id="lastVote">{{ answer }}</div><br>
+<app-voter-component
+    [question]="question"
+    [yesAnswer]="yesAnswer"
+    [noAnswer]="noAnswer"
+    (output)="setVote($event)"  
+></app-voter-component> <!--(output) Donnée evenement qui se trouve dans le compsant enfant--> 
+
+
+

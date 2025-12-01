@@ -1,0 +1,12 @@
+<!--Response-->
+<div id="fee">{{ fee | percent : "2.2-3" }}</div>
+<div id="amount">{{ amount | currency : currency : "symbol" : "9.2-2" }}</div>
+<div id="time">{{ timeOfTransaction | date : "ww: yyyy M dd hh-mm-ss" }}</div>
+
+<!--Methode 2-->
+<!--<div id="fee">{{ fee * 100 | number : "2.2-3" }}%</div>
+<div id="amount">
+  {{currency === 'EUR' ? '€' : currency === 'USD' ? '$' : currency === 'GBP' ? currency }}
+  {{ amount | number : "9.2-2" }}
+</div>
+<div id="time">{{ timeOfTransaction | date : "ww: yyyy M dd hh-mm-ss" }}</div>-->

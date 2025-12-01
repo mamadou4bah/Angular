@@ -1,0 +1,35 @@
+<div>
+  <input
+    id="createAccountInput"
+    #createAccountInput
+    type="text"
+    placeholder="Account name"
+  />
+  <button
+    id="createAccountButton"
+    (click)="createAccount(createAccountInput.value)"
+  >
+    Create Account
+  </button>
+  <br /><br />
+  <input
+    id="topupAccountInput"
+    #topupAccountInput
+    type="text"
+    placeholder="Account name"
+  />
+  <input
+    id="topupAmountInput"
+    #topupAmountInput
+    type="number"
+    placeholder="Amount"
+  />
+  <button
+    id="topupAccountButton"
+    (click)="topUp(topupAccountInput.value, topupAmountInput.value)"
+  >
+    Top Up
+  </button>
+  <br /><br />
+  <div id="message">{{ message }}</div>
+</div>

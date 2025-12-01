@@ -1,0 +1,26 @@
+<app-display-component></app-display-component> <br /><br />
+
+Hello <span appShark></span><br />
+Hello <input #someInput /><br />
+
+<!--<app-child>{{ childComponent }}</app-child>-->
+
+<div style="color: green; font-size: 20px">Exercice 2: Label-component</div>
+<!--Response label-component-->
+<label-component label="Hello word!" color="red"></label-component><br /><br />
+
+<div style="color: green; font-size: 20px">Exercice 3: Transaction-detail</div>
+<div *ngFor="let t of transactions">
+  <transaction-component
+    [currency]="t.currency"
+    [fee]="t.fee"
+    [name]="t.name"
+    [amount]="t.amount"
+    [timeOfTransaction]="t.timeOfTransaction"
+  ></transaction-component>
+  <hr />
+</div>
+
+<div style="color: green; font-size: 20px">Exercice 4: Test component</div>
+<test-component [inputData]="testArray"></test-component>
+<account-component></account-component>
